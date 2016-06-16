@@ -94,6 +94,11 @@ public class SCLAlertViewResponder {
     public func setDismissBlock(dismissBlock: DismissBlock) {
         self.alertview.dismissBlock = dismissBlock
     }
+    
+    public func setAttributedSubTitle(subTitle: NSAttributedString) {
+        
+        self.alertview.viewText.attributedText = subTitle
+    }
 }
 
 let kCircleHeightBackground: CGFloat = 62.0
